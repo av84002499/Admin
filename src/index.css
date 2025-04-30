@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    margin-top: 0%;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.containe {
+
+
+    padding-left: 2%;
+    padding-right: 0%;
+}
+
+.card6 {
+    width: 400px;
+    height: 500px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    /* Enables flexbox */
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    /* Centers vertically */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* background-color: black; */
+}
+
+.cont {
+    display: grid;
+    place-items: center;
+    height: 80vh;
+    margin: 0;
+}

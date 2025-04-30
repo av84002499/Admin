@@ -1,0 +1,183 @@
+/* Navbar styling */
+.navbar-container {
+    width: 100%;
+    padding: 10px 22px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #d11dd7;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+
+    
+  }
+  
+  .navbar-container.dark-nav {
+    background-color: #1916d7;
+  }
+  
+  .logo {
+    width: 180px;
+  }
+  
+  /* Menu Icon for Mobile */
+  .menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+  }
+  
+  .menu-icon .line {
+    background-color: #fff;
+    height: 3px;
+    margin: 5px 0;
+    width: 100%;
+  }
+  
+  .menu-icon.open .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-icon.open .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .menu-icon.open .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  /* Nav links */
+  .nav-links {
+    display: flex;
+    list-style: none;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  /* Responsive Media Queries */
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: flex;
+    }
+  
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      flex-direction: column;
+      background-color: #111111;
+      width: 100%;
+      height: 50vh;
+      justify-content: center;
+      align-items: center;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .nav-links.open {
+      transform: translateX(0);
+    }
+  
+    .nav-links li {
+      margin: 2px ;
+    }
+  
+    .btn {
+      padding: 12px 20px;
+    }
+  }
+  /* Dropdown styles */
+  .account-dropdown .dropdown-toggle {
+    cursor: pointer;
+  }
+  
+  .account-dropdown {
+    position: relative; /* Ensure the dropdown menu is positioned relative to this element */
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Places the menu just below the toggle */
+    left: 0; /* Aligns the dropdown menu to the left side of the toggle */
+    background-color: #050505;
+    list-style: none;
+    padding: 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-menu.open {
+    display: block; /* Shows the dropdown menu when 'open' class is added */
+  }
+  
+  
+  /* Tablet screens */
+  @media (max-width: 1024px) {
+    .nav-links li {
+      margin: 10px 10px;
+    }
+  }
+  
+  
+  
+  .dropdown-menu.open {
+    display: block;
+  }
+  
+  .dropdown-menu li {
+    padding: 10px 20px;
+  }
+  
+  .dropdown-menu li a {
+    text-decoration: none;
+    background-color: #050505;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #050505;
+  }
+  
+  /* Responsive dropdown menu styling */
+  @media (max-width: 768px) {
+    /* For tablets and smaller screens */
+  
+    .dropdown-menu {
+      position: static; /* No absolute positioning */
+      margin-left: 0;   /* Centered on smaller screens */
+      width: 100%;      /* Full width for smaller screens */
+    }
+  
+    .dropdown-menu li {
+      text-align: center; /* Center the text */
+    }
+  }
+  
+  /* Mobile-specific menu */
+  @media (max-width: 480px) {
+    /* For phones */
+    .dropdown-menu {
+      width: 100%; /* Ensure the dropdown takes full width on mobile */
+    }
+  
+    .dropdown-menu li {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .dropdown-menu li a {
+      font-size: 14px; /* Smaller font for mobile */
+    }
+  }
