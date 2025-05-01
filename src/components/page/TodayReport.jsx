@@ -25,7 +25,7 @@ const TodayReport = () => {
             }
 
             try {
-                const response = await fetch('http://localhost:4200/api/admin/cards', {
+                const response = await fetch('http://13.51.241.144:4200/api/admin/cards', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',

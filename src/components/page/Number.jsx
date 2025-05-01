@@ -27,7 +27,7 @@ const Number = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:4200/api/admin/declareLuckyNumber', {
+      const response = await fetch('http://13.51.241.144:4200/api/admin/declareLuckyNumber', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -68,7 +68,7 @@ const Number = () => {
   useEffect(() => {
     const interval = setInterval(async () => {
       try {
-        const response = await fetch('http://localhost:4200/api/admin/luckyNumbers', {
+        const response = await fetch('http://13.51.241.144:4200/api/admin/luckyNumbers', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',

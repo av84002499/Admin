@@ -15,7 +15,7 @@ const WithdrawRequests = () => {
         const payment_id = e.target.payment_id.value;
 
         try {
-            const response = await fetch('http://localhost:4200/api/admin/updateWithdrawRequest', {
+            const response = await fetch('http://13.51.241.144:4200/api/admin/updateWithdrawRequest', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -58,7 +58,7 @@ const WithdrawRequests = () => {
     useEffect(() => {
         const interval = setInterval(async () => {
             try {
-                const response = await fetch('http://localhost:4200/api/admin/withdrawRequests', {
+                const response = await fetch('http://13.51.241.144:4200/api/admin/withdrawRequests', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',

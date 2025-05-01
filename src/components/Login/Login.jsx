@@ -30,7 +30,7 @@ const Login = () => {
     setLoading(true);
     const formData = { username, password };
     try {
-      const response = await fetch('http://localhost:4200/api/admin/login', {
+      const response = await fetch('http://13.51.241.144:4200/api/admin/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

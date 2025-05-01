@@ -21,7 +21,7 @@ const User = () => {
       }
 
       try {
-        const response = await fetch('http://localhost:4200/api/admin/appUsers', {
+        const response = await fetch('http://13.51.241.144:4200/api/admin/appUsers', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
